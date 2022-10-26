@@ -2,7 +2,16 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "sumneko_lua", "clangd", "rust_analyzer" }
+local servers = {
+    "html",
+    "cssls",
+    "sumneko_lua",
+    "clangd",
+    "rust_analyzer",
+    "tsserver",
+    "golangci_lint_ls",
+    "gopls",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

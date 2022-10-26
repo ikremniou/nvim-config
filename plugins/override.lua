@@ -10,7 +10,7 @@ M.treesitter = {
         "cpp",
         "json",
         "typescript",
-        "javascript"
+        "javascript",
     }
 }
 
@@ -20,6 +20,9 @@ M.mason = {
         "clangd",
         "clang-format",
         "rust-analyzer",
+        "typescript-language-server",
+        "golangci-lint-langserver",
+        "gopls",
     }
 }
 
@@ -27,4 +30,4 @@ M.gitsigns = {
     current_line_blame = true
 }
 
-return M 
+return M
